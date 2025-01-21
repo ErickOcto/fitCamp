@@ -29,10 +29,10 @@ class FacilityResource extends Resource
 
                 Forms\Components\TextArea::make('about')->required(),
 
-                Forms\Components\Select::make('name')->options([
+                Forms\Components\Select::make('is_open')->options([
                     true => 'Open',
                     false => 'Maintenance',
-                ]),
+                ])->required(),
             ]);
     }
 
